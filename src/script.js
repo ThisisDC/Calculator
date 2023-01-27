@@ -242,10 +242,11 @@ bn9.addEventListener('click', ()=> {
 
 function bn0function(){
     if(resultbox.innerHTML.length > 13){return}
-    if(resultbox.innerHTML === '0'){
-    return
-    }
+    
     resultbox.innerHTML = checkifisnewnumber();
+    if(resultbox.innerHTML === '0'){
+        return
+        }
     resultbox.innerHTML = resultbox.innerHTML+'0';
 }
 
@@ -336,6 +337,9 @@ function baddfunction(){
     let operator = '+';
 
     if(newnumber===true){
+        if(resultbox.innerHTML === '0'){
+            textbox.innerHTML = '0' + operator;
+        }
         textbox.innerHTML = textbox.innerHTML.slice(0,textbox.innerHTML.length-1)+operator;
         return
     }
@@ -368,6 +372,9 @@ function bsubfunction(){
     let operator = '−';
 
     if(newnumber===true){
+        if(resultbox.innerHTML === '0'){
+            textbox.innerHTML = '0' + operator;
+        }
         textbox.innerHTML = textbox.innerHTML.slice(0,textbox.innerHTML.length-1)+operator;
         return
     }
@@ -401,6 +408,9 @@ function bmoltfunction(){
     let operator = '×';
 
     if(newnumber===true){
+        if(resultbox.innerHTML === '0'){
+            textbox.innerHTML = '0' + operator;
+        }
         textbox.innerHTML = textbox.innerHTML.slice(0,textbox.innerHTML.length-1)+operator;
         return
     }
@@ -433,6 +443,9 @@ function bdivfunction(){
     let operator = '÷';
 
     if(newnumber===true){
+        if(resultbox.innerHTML === '0'){
+            textbox.innerHTML = '0' + operator;
+        }
         textbox.innerHTML = textbox.innerHTML.slice(0,textbox.innerHTML.length-1)+operator;
         return
     }
