@@ -307,25 +307,6 @@ function bdeletefunction(){
             newnumber = true;
         }
     }
-    /*
-
-    let string = resultbox.innerHTML;
-    let stringlength = string.length;
-
-    if(textbox.innerHTML.slice(0,stringlength-1) === resultbox.innerHTML){
-        if(stringlength > 1){
-            resultbox.innerHTML = resultbox.innerHTML.slice(0,stringlength-1);
-        }
-        else{
-            resultbox.innerHTML = '0';
-        }
-    }
-
-    if(justusedequal === true){
-        textbox.innerHTML = '';
-        resultbox.innerHTML = risultato;
-    }
-    */
 }
 
 bdeletebutton.addEventListener('click', ()=> {
